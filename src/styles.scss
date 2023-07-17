@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+$font: 'Roboto', sans-serif;
+$font-size-xs: 1rem;
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: $font;
+    margin: 0
+ 
+}
+
