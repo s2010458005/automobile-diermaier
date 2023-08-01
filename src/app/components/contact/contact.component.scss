@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 :host {
   flex: 1;
 }
@@ -11,7 +13,7 @@
 .header {
   &__image {
     width: 100%;
-    opacity: 0.5;
+    // opacity: 0.5;
 
     @media (max-width: 700px) {
       height: 15rem;
@@ -24,15 +26,33 @@
     }
   }
 
+  &__background {
+    border-radius: 1rem;
+    color: grey;
+    height: 20rem;
+  }
+
+  //title with image
+  // &__title {
+  //   font-family: $heading-font;
+  //   font-size: clamp(1.5rem, 8vw, 6rem);
+  //   font-weight: 700;
+  //   width: max-content;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   color: white;
+  // }
+
+  //title without image
   &__title {
-    font-size: clamp(1.5rem, 8vw, 6rem);
-    font-weight: 700;
+    font-family: $heading-font;
+    font-size: clamp(1.5rem, 9vw, 6rem);
     width: max-content;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(234, 234, 234);
+    color: black;
+    margin: 4rem;
+    text-align: center;
   }
 }
 
@@ -49,7 +69,7 @@
 
 .item {
   gap: 1rem;
-  transform: translateY(-15%);
+  // transform: translateY(-15%);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -58,7 +78,7 @@
   width: 25rem;
   max-height: 13rem;
   border-radius: 1rem;
-  background-color: rgb(234, 234, 234);
+  background-color: #e6010c4e;
 
   @media (max-width: 700px) {
     transform: translateY(15%);
@@ -86,6 +106,6 @@
   }
 
   &:hover {
-    background-color: rgb(220, 220, 220);
+    background-color: rgba(193, 23, 37, 0.5);
   }
 }
