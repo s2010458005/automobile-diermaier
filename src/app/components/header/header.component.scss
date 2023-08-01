@@ -1,41 +1,54 @@
 @import '../../../styles.scss';
 
-.header {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-
-    &__title {
-        display: flex;
-        align-items: center;
-        padding: 2rem;
-        font-weight: 400;
-        font-size: 2rem;
-        text-decoration: none;
-        color: black;
-
-        &:hover {
-            cursor: pointer;
-            font-weight: 600;
-        }
-    }
+:host {
+  width: 100%;
 }
 
-.header-menu {
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: baseline;
+
+  &__title {
     display: flex;
     align-items: center;
-}
-
-.header-entry {
-    margin: 1rem;
+    padding: 2rem;
+    font-weight: 400;
+    font-size: 2rem;
     text-decoration: none;
     color: black;
 
     &:hover {
-        cursor: pointer;
-        font-size: 1.2rem;
-        font-weight: 500;
+      cursor: pointer;
+      font-weight: 600;
     }
+  }
 }
 
+.header-title-wrapper {
+  flex-shrink: 0;
+}
 
+.header-menu {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  max-width: 30rem;
+  min-width: 10rem;
+  justify-content: space-evenly;
+}
+
+.header-entry {
+  margin: 1rem;
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    cursor: pointer;
+    // font-size: 1.2rem;
+    // font-weight: 500;
+    transform: translateY(-2px);
+  }
+}
