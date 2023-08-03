@@ -1,6 +1,22 @@
 <div class="header">
   <div class="header-title-wrapper">
-    <a routerLink="/" class="header__title">Automobile Diermaier</a>
+    <!-- <a routerLink="/" class="header__title">Automobile Diermaier</a> -->
+    <img
+      *ngIf="showLargeLogo"
+      a
+      routerLink="/"
+      src="assets/logo/logo-text-white.png"
+      alt="Logo"
+      class="header__logo"
+    />
+    <img
+      *ngIf="!showLargeLogo"
+      a
+      routerLink="/"
+      src="assets/logo/logo-small-white.png"
+      alt="Logo"
+      class="header__logo"
+    />
   </div>
   <nav class="header-menu">
     <a routerLink="/fahrzeuge" class="header-entry">Fahrzeuge</a>

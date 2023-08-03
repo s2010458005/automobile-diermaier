@@ -8,7 +8,7 @@
   display: flex;
   width: 100%;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: center;
 
   &__title {
     display: flex;
@@ -24,10 +24,23 @@
       font-weight: 600;
     }
   }
+
+  &__logo {
+    height: 3rem;
+    padding: 2rem;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+  }
 }
 
 .header-title-wrapper {
   flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .header-menu {
@@ -41,14 +54,21 @@
 }
 
 .header-entry {
-  margin: 1rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   color: black;
+  font-size: clamp(0.5rem, 2vw, 1.2rem);
+  transition: transform 0.2s ease;
 
   &:hover {
     cursor: pointer;
     // font-size: 1.2rem;
     // font-weight: 500;
-    transform: translateY(-2px);
+    // transform: translateY(-2px);
+
+    // background-color: grayscale($color: #edebeb);
+    // border-radius: 1.5rem;
+
+    transform: scale(1.1);
   }
 }
