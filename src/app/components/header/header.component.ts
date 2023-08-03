@@ -6,7 +6,8 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  showLargeLogo = false;
+  showLargeLogo: boolean = false;
+  showDesktopMenu: boolean = false;
 
   constructor() {
     this.updateViewportWidth(window.innerWidth);
@@ -19,5 +20,6 @@ export class HeaderComponent {
 
   updateViewportWidth(width: number) {
     this.showLargeLogo = width >= 1000;
+    this.showDesktopMenu = width >= 600;
   }
 }

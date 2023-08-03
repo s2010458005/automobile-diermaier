@@ -1,0 +1,20 @@
+<div class="mobile-menu">
+  <div class="logo-container">
+    <img
+      a
+      routerLink="/"
+      [src]="this.logo"
+      alt="Logo"
+      class="logo-container__logo"
+    />
+  </div>
+  <div class="icon-container" (click)="toggleMenu()">
+    <img [src]="this.icon" alt="Logo" class="icon-container__icon" />
+  </div>
+
+  <div class="menu-modal" *ngIf="showMenu">
+    <!-- <a routerLink="/fahrzeuge" class="menu-modal__entry">Fahrzeuge</a>
+    <a routerLink="/über-mich" class="menu-modal__entry">Über mich</a>
+    <a routerLink="/kontakt" class="menu-modal__entry">Kontakt</a> -->
+  </div>
+</div>

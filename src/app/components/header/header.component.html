@@ -1,26 +1,8 @@
 <div class="header">
-  <div class="header-title-wrapper">
-    <!-- <a routerLink="/" class="header__title">Automobile Diermaier</a> -->
-    <img
-      *ngIf="showLargeLogo"
-      a
-      routerLink="/"
-      src="assets/logo/logo-text-white.png"
-      alt="Logo"
-      class="header__logo"
-    />
-    <img
-      *ngIf="!showLargeLogo"
-      a
-      routerLink="/"
-      src="assets/logo/logo-small-white.png"
-      alt="Logo"
-      class="header__logo"
-    />
-  </div>
-  <nav class="header-menu">
-    <a routerLink="/fahrzeuge" class="header-entry">Fahrzeuge</a>
-    <a routerLink="/über-mich" class="header-entry">Über mich</a>
-    <a routerLink="/kontakt" class="header-entry">Kontakt</a>
-  </nav>
+  <app-desktop-menu
+    [showLargeLogo]="this.showLargeLogo"
+    *ngIf="showDesktopMenu"
+    class="menu"
+  ></app-desktop-menu>
+  <app-mobile-menu *ngIf="!showDesktopMenu" class="menu"></app-mobile-menu>
 </div>

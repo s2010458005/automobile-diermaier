@@ -1,0 +1,53 @@
+@import '../../../styles.scss';
+
+:host {
+  width: 100%;
+}
+
+.mobile-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-container {
+  z-index: 11;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+
+  &__logo {
+    z-index: 10;
+    height: 3rem;
+    padding: 2rem;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+  }
+}
+
+.icon-container {
+  z-index: 11;
+
+  &__icon {
+    height: 2rem;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+  }
+}
+
+.menu-modal {
+  position: fixed;
+  width: 100%;
+  height: 200vh;
+  background-color: rgba(0, 0, 0, 0.9); /* Hintergrundfarbe des Overlays */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

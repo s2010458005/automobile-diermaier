@@ -1,0 +1,26 @@
+<div class="desktop-menu">
+  <div class="logo-container">
+    <!-- <a routerLink="/" class="header__title">Automobile Diermaier</a> -->
+    <img
+      *ngIf="showLargeLogo"
+      a
+      routerLink="/"
+      src="assets/logo/logo-text-white.png"
+      alt="Logo"
+      class="logo-container__logo"
+    />
+    <img
+      *ngIf="!showLargeLogo"
+      a
+      routerLink="/"
+      src="assets/logo/logo-small-white.png"
+      alt="Logo"
+      class="logo-container__logo"
+    />
+  </div>
+  <nav class="menu-list">
+    <a routerLink="/fahrzeuge" class="menu-list__entry">Fahrzeuge</a>
+    <a routerLink="/über-mich" class="menu-list__entry">Über mich</a>
+    <a routerLink="/kontakt" class="menu-list__entry">Kontakt</a>
+  </nav>
+</div>

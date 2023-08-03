@@ -1,0 +1,61 @@
+@import '../../../styles.scss';
+
+:host {
+  width: 100%;
+}
+
+.desktop-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-container {
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+
+  &__logo {
+    height: 3rem;
+    padding: 2rem;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+  }
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  max-width: 30rem;
+  min-width: 10rem;
+  justify-content: space-evenly;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+
+  &__entry {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    transition: transform 0.2s ease;
+
+    &:hover {
+      cursor: pointer;
+      // font-size: 1.2rem;
+      // font-weight: 500;
+      // transform: translateY(-2px);
+
+      // background-color: grayscale($color: #edebeb);
+      // border-radius: 1.5rem;
+
+      transform: scale(1.1);
+    }
+  }
+}
