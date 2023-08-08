@@ -16,7 +16,7 @@
 
   &__logo {
     height: 3rem;
-    padding: 2rem;
+    padding: 1.5rem;
     transition: transform 0.2s ease;
 
     &:hover {
@@ -45,6 +45,7 @@
     color: black;
     font-size: clamp(1rem, 2vw, 1.2rem);
     transition: transform 0.2s ease;
+    white-space: nowrap;
 
     &:hover {
       cursor: pointer;

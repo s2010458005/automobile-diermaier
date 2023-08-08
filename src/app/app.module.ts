@@ -13,6 +13,7 @@ import { ImpressumComponent } from './components/impressum/impressum.component';
 import { MapComponent } from './components/map/map.component';
 import { MobileMenuComponent } from './components/mobile-menu/mobile-menu.component';
 import { DesktopMenuComponent } from './components/desktop-menu/desktop-menu.component';
+import { ServiceComponent } from './components/service/service.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { DesktopMenuComponent } from './components/desktop-menu/desktop-menu.com
     MapComponent,
     MobileMenuComponent,
     DesktopMenuComponent,
+    ServiceComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
