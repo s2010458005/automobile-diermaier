@@ -1,20 +1,32 @@
 <div class="mobile-menu" [ngClass]="{ 'mobile-menu--open': showMenu }">
-  <div class="logo-container" (click)="clickLogo()">
+  <div class="logo-container">
     <img
       a
       routerLink="/"
+      [ngClass]="{ 'logo-container__logo--menu-open': !showMenu }"
       [src]="this.logo"
       alt="Logo"
       class="logo-container__logo"
     />
   </div>
   <div class="icon-container" (click)="toggleMenu()">
-    <img [src]="this.icon" alt="Logo" class="icon-container__icon" />
+    <img
+      [src]="this.icon"
+      alt="Icon"
+      class="icon-container__icon"
+      [ngClass]="{ 'icon-container__icon--small': showMenu }"
+    />
   </div>
 </div>
 
 <div class="menu-overlay" *ngIf="showMenu">
   <div class="menu-entries-container">
+    <a
+      routerLink="/"
+      class="menu-entries-container__entry"
+      (click)="toggleMenu()"
+      >Start</a
+    >
     <a
       routerLink="/fahrzeuge"
       class="menu-entries-container__entry"

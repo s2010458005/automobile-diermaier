@@ -34,15 +34,5 @@ export class MobileMenuComponent {
     } else {
       this.logo = this.normalLogo;
     }
-    console.log(this.icon);
-    console.log(this.showMenu);
-  }
-
-  clickLogo() {
-    // if (this.showMenu) {
-    //   this.showMenu = false;
-    // }
-
-    this.toggleMenu();
   }
 }
