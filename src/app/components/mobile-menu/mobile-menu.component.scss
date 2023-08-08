@@ -19,6 +19,7 @@
   flex-shrink: 0;
   position: relative;
   overflow: hidden;
+  display: flex;
 
   &__logo {
     z-index: 10;
@@ -57,7 +58,7 @@
   justify-content: center;
   width: 100%;
   overflow: hidden;
-  height: calc(100vh - 116px);
+  height: calc(100vh - 90px);
   background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -70,12 +71,12 @@
   justify-content: center;
 
   &__entry {
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
     width: 100%;
     color: white;
     text-decoration: none;
-    font-size: clamp(1.5rem, 4vw, 6rem);
+    font-size: clamp(1rem, 7vw, 2rem);
     font-family: $heading-font;
 
     &:hover {

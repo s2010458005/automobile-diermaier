@@ -13,6 +13,7 @@
   flex-shrink: 0;
   position: relative;
   overflow: hidden;
+  display: flex;
 
   &__logo {
     height: 3rem;
