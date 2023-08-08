@@ -53,14 +53,15 @@
 }
 
 .menu-overlay {
+  display: flex;
+  justify-content: center;
   width: 100%;
   overflow: hidden;
-  height: 100vh;
+  height: calc(100vh - 116px);
   background-color: rgba(0, 0, 0, 0.9);
 }
 
 .menu-entries-container {
-  padding-top: 5rem;
   display: flex;
   width: 100%;
   color: white;
@@ -82,4 +83,24 @@
       background-color: rgb(50, 50, 50);
     }
   }
+}
+
+.menu-list-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+
+  &__icon {
+    height: 1.2rem;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  }
+}
+
+.icon-position {
+  display: flex;
+  align-items: center;
 }

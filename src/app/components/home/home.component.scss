@@ -8,14 +8,10 @@
   margin: 3rem;
   gap: 2rem;
   display: flex;
-  // justify-content: space-between;
   justify-content: center;
   align-items: center;
 
   @media (max-width: 1200px) {
-    // justify-content: center;
-    justify-content: center;
-
     flex-wrap: wrap;
   }
 }

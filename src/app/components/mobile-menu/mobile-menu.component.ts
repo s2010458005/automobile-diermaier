@@ -8,7 +8,7 @@ import { Component, Renderer2 } from '@angular/core';
 export class MobileMenuComponent {
   showMenu: boolean = false;
 
-  hamburgerIcon = 'assets/icons/hamburger-menu.jpg';
+  hamburgerIcon = 'assets/icons/hamburger2.png';
   closeIcon = 'assets/icons/close.png';
   icon = this.hamburgerIcon;
 

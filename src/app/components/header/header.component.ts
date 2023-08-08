@@ -19,7 +19,7 @@ export class HeaderComponent {
   }
 
   updateViewportWidth(width: number) {
-    this.showLargeLogo = width >= 1000;
-    this.showDesktopMenu = width >= 600;
+    this.showLargeLogo = width >= 1100;
+    this.showDesktopMenu = width >= 700;
   }
 }

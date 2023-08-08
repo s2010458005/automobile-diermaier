@@ -59,3 +59,22 @@
     }
   }
 }
+
+.menu-list-icons {
+  display: flex;
+  gap: 1rem;
+
+  &__icon {
+    height: 1.2rem;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.icon-position {
+  display: flex;
+  align-items: center;
+}
