@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-mobile-menu',
@@ -16,13 +16,17 @@ export class MobileMenuComponent {
   transparentLogo = 'assets/logo/logo-small-transparent.png';
   logo = this.normalLogo;
 
+  constructor(private renderer: Renderer2) {}
+
   toggleMenu() {
     this.showMenu = !this.showMenu;
 
     if (this.icon == this.hamburgerIcon) {
       this.icon = this.closeIcon;
+      this.renderer.addClass(document.body, 'prevent-scroll');
     } else {
       this.icon = this.hamburgerIcon;
+      this.renderer.removeClass(document.body, 'prevent-scroll');
     }
 
     if (this.logo == this.normalLogo) {

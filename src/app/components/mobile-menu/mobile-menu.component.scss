@@ -8,6 +8,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  &--open {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
 }
 
 .logo-container {
@@ -42,12 +46,26 @@
   }
 }
 
-.menu-modal {
-  position: fixed;
+.menu-overlay {
   width: 100%;
-  height: 200vh;
-  background-color: rgba(0, 0, 0, 0.9); /* Hintergrundfarbe des Overlays */
+  overflow: hidden;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.menu-entries-container {
+  padding-top: 5rem;
   display: flex;
-  justify-content: center;
+  width: 100%;
+  color: white;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+
+  &__entry {
+    padding: 2rem;
+    color: white;
+    text-decoration: none;
+    font-size: clamp(1.5rem, 4vw, 6rem);
+  }
 }

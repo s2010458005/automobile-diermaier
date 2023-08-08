@@ -38,5 +38,6 @@
 }
 
 .container-image {
-  max-width: 40rem;
+  // max-width: 40rem;
+  max-width: clamp(20rem, 4vw, 40rem);
 }

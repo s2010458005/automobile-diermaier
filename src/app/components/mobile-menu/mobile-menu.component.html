@@ -1,5 +1,5 @@
-<div class="mobile-menu">
-  <div class="logo-container">
+<div class="mobile-menu" [ngClass]="{ 'mobile-menu--open': showMenu }">
+  <div class="logo-container" (click)="clickLogo()">
     <img
       a
       routerLink="/"
@@ -11,10 +11,27 @@
   <div class="icon-container" (click)="toggleMenu()">
     <img [src]="this.icon" alt="Logo" class="icon-container__icon" />
   </div>
+</div>
 
-  <div class="menu-modal" *ngIf="showMenu">
-    <!-- <a routerLink="/fahrzeuge" class="menu-modal__entry">Fahrzeuge</a>
-    <a routerLink="/über-mich" class="menu-modal__entry">Über mich</a>
-    <a routerLink="/kontakt" class="menu-modal__entry">Kontakt</a> -->
+<div class="menu-overlay" *ngIf="showMenu">
+  <div class="menu-entries-container">
+    <a
+      routerLink="/fahrzeuge"
+      class="menu-entries-container__entry"
+      (click)="toggleMenu()"
+      >Fahrzeuge</a
+    >
+    <a
+      routerLink="/über-mich"
+      class="menu-entries-container__entry"
+      (click)="toggleMenu()"
+      >Über mich</a
+    >
+    <a
+      routerLink="/kontakt"
+      class="menu-entries-container__entry"
+      (click)="toggleMenu()"
+      >Kontakt</a
+    >
   </div>
 </div>
