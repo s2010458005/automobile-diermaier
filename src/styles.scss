@@ -13,6 +13,10 @@ body {
   font-family: $font;
   margin: 0;
   height: 100%;
+
+  @media screen and (max-width: 600px) {
+    font-size: 0.75rem;
+  }
 }
 
 .prevent-scroll {
