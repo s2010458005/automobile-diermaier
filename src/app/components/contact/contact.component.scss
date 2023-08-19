@@ -2,6 +2,7 @@
 
 :host {
   flex: 1;
+  background-color: #f4f4f4;
 }
 
 .contact-heading {
@@ -111,22 +112,28 @@
 }
 
 .contact {
+  @media screen and (min-width: 1200px) {
+    margin-top: 7rem;
+  }
+
   @media screen and (max-width: 700px) {
     margin: 1rem;
   }
 
   &__heading {
     font-family: $heading-font;
-    font-size: clamp(1rem, 4vw, 3rem);
-    font-weight: 600;
+    font-size: clamp(1rem, 5vw, 3rem);
+    font-weight: 700;
     width: max-content;
-    color: grayscale($color: #434343);
+    color: $grey-90;
     padding: 2rem 2rem 0.5rem;
   }
 
   &__subheading {
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    color: grayscale($color: #5d5d5d);
+    // font-size: clamp(0.8rem, 2vw, 1.5rem);
+    color: $grey-90;
+    // color: grayscale($color: #5d5d5d);
+
     padding: 0.5rem 1rem 4rem;
     text-align: center;
 
@@ -150,11 +157,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
     height: 13rem;
-    border-radius: 1rem;
     padding: 0 1rem;
-    background-color: rgb(16, 16, 16);
+    background-color: white;
+    // background-color: rgb(179, 179, 179);
+    // border-radius: 1rem;
+    // box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
 
     @media screen and (max-width: 600px) {
       width: 100%;
@@ -167,7 +175,7 @@
 
     @media screen and (width > 1200px) {
       width: 25vw;
-      height: 20rem;
+      height: 18rem;
       padding: 2rem;
     }
 
@@ -179,7 +187,8 @@
   &__heading {
     display: flex;
     font-size: clamp(1rem, 4vw, 1.5rem);
-    color: white;
+    // color: white;
+    color: $grey-90;
     font-weight: 500;
   }
 }
@@ -189,7 +198,8 @@
   flex-direction: column;
 
   &__text {
-    color: white;
+    // color: white;
+    color: $grey-70;
   }
 
   &__link {

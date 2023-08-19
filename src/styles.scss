@@ -1,8 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
-$font: 'Open Sans', sans-serif;
+$font: 'Inter';
 $heading-font: 'Comfortaa', cursive;
 $font-size-xs: 1rem;
+$grey-90: #1f1f1f;
+$grey-70: #4f4f4f;
+$shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
 
 html {
   font-size: 16px;
