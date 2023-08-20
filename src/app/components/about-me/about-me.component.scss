@@ -12,7 +12,7 @@
   &__background {
     display: flex;
     justify-content: center;
-    background-color: #f4f4f4;
+    background-color: $grey-background;
     height: 20rem;
     width: 100%;
     margin-bottom: 13rem;
@@ -70,7 +70,7 @@
   &__heading {
     padding: 1rem;
     font-family: $heading-font;
-    font-size: clamp(1rem, 5vw, 3rem);
+    font-size: clamp(1rem, 7vw, 3rem);
     font-weight: 700;
     width: max-content;
     color: $grey-90;
@@ -82,10 +82,22 @@
   }
 
   &__text {
-    padding: 0 5rem 2rem;
+    // padding: 0 5rem 2rem;
+  }
 
-    @media screen and (max-width: 600px) {
-      padding: 0 2rem 2rem;
-    }
+  &__text-special {
+    font-family: $quote-font;
+
+    // &:hover {
+    //   transform: translate(0, -0.5rem);
+    // }
+  }
+}
+
+.text-container {
+  padding: 0 5rem 2rem;
+
+  @media screen and (max-width: 600px) {
+    padding: 0 2rem 2rem;
   }
 }

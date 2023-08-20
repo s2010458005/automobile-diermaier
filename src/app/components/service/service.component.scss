@@ -1,0 +1,25 @@
+@import '../../../styles.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+
+  &__box {
+    padding: 1rem;
+    height: 23rem;
+    width: 20rem;
+    background-color: $grey-background;
+  }
+}
+
+.box {
+  &__heading {
+    font-weight: 700;
+  }
+
+  &__icon {
+    width: 5rem;
+  }
+}

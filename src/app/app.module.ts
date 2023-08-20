@@ -14,6 +14,8 @@ import { MapComponent } from './components/map/map.component';
 import { MobileMenuComponent } from './components/mobile-menu/mobile-menu.component';
 import { DesktopMenuComponent } from './components/desktop-menu/desktop-menu.component';
 import { ServiceComponent } from './components/service/service.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,12 @@ import { ServiceComponent } from './components/service/service.component';
     DesktopMenuComponent,
     ServiceComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatExpansionModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
