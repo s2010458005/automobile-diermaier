@@ -13,19 +13,23 @@ export class ServiceComponent {
       'assets/icons/fahrzeugsuche2.png',
       'Verkauf',
       'Ich biete Gebrauchtwagen zur besten Qualität an.',
-      ['hallo', 'servus'],
+      ['Geprüfte Gebrauchtwagen', 'Beste Angebote', 'Handschlagqualität'],
     ),
     new ServiceItem(
       'assets/icons/car.png',
       'Fahrzeugsuche',
       'Sie träumen schon immer von Ihrem Traumwagen? Ich suche Ihr Tramfahrzeug zum besten Angebot.',
-      ['hallo', 'servus'],
+      ['Unterstützung durch Expertenwissen'],
     ),
     new ServiceItem(
       'assets/icons/money.png',
       'Finanzierung',
       'Ich finde Ihr passendes Finanzierungsangebot für Ihr Auto.',
-      ['hallo', 'servus'],
+      [
+        'Kundenorientierte Angebote',
+        'Leasingmöglichkeit',
+        'Mit oder ohne Anzahlung',
+      ],
     ),
   ];
 

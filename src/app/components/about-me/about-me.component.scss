@@ -69,15 +69,18 @@
 
   &__heading {
     padding: 1rem;
-    font-family: $heading-font;
+    // font-family: $heading-font;
+    // font-weight: 700;
+
+    font-family: $quote-font;
+    font-weight: 300;
     font-size: clamp(1rem, 7vw, 3rem);
-    font-weight: 700;
     width: max-content;
     color: $grey-90;
     transition: all 0.2s ease-in-out;
 
     &:hover {
-      scale: 1.1;
+      transform: translate(0.5rem, 0);
     }
   }
 

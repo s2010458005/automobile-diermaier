@@ -48,7 +48,7 @@
 
   //title without image
   &__title {
-    font-family: $heading-font;
+    font-family: $quote-font;
     font-size: clamp(1.5rem, 9vw, 6rem);
     width: max-content;
     color: black;
@@ -121,9 +121,10 @@
   }
 
   &__heading {
-    font-family: $heading-font;
+    // font-family: $heading-font;
     font-size: clamp(1rem, 5vw, 3rem);
-    font-weight: 700;
+    // font-weight: 700;
+    // font-family: $quote-font;
     width: max-content;
     color: $grey-90;
     padding: 2rem 2rem 0.5rem;
@@ -133,7 +134,7 @@
     // font-size: clamp(0.8rem, 2vw, 1.5rem);
     color: $grey-90;
     // color: grayscale($color: #5d5d5d);
-
+    font-family: $quote-font;
     padding: 0.5rem 1rem 4rem;
     text-align: center;
 
@@ -206,13 +207,7 @@
     text-decoration: none;
 
     &:hover {
-      border-radius: 1rem;
-      background-color: rgb(60, 60, 60);
-
-      .contact-boxes__box {
-        transform: scale(1.1);
-        background-color: pink;
-      }
+      outline: auto 1px $grey-70;
     }
   }
 }
