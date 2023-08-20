@@ -10,6 +10,7 @@
 }
 
 .logo-container {
+  margin-left: 2rem;
   flex-shrink: 0;
   position: relative;
   overflow: hidden;
@@ -27,13 +28,20 @@
   }
 }
 
+.spacer {
+  // min-width: 5rem;
+  // max-width: 30rem;
+  // width: clamp(5rem, 50%, 30rem);
+}
+
 .menu-list {
+  margin-right: 2rem;
   display: flex;
   align-items: center;
   text-align: center;
   flex: 1;
-  max-width: 30rem;
   min-width: 10rem;
+  max-width: 50rem;
   justify-content: space-evenly;
 
   @media (max-width: 600px) {
@@ -41,7 +49,7 @@
   }
 
   &__entry {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     text-decoration: none;
     color: black;
     font-size: clamp(1rem, 2vw, 1.2rem);
@@ -58,6 +66,10 @@
       // border-radius: 1.5rem;
 
       transform: scale(1.1);
+    }
+
+    &:focus {
+      transform: scale(1.2);
     }
   }
 }

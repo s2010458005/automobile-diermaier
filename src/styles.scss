@@ -50,6 +50,7 @@ $grey-90: #1f1f1f;
 $grey-70: #4f4f4f;
 $grey-50: #7b7b7b;
 $shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+$transition: 0.3s ease-in-out;
 
 html {
   font-size: 16px;
@@ -77,11 +78,11 @@ body {
   margin: 5rem 3rem 2rem;
 }
 
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
-}
+// html,
+// body {
+//   height: 100%;
+// }
+// body {
+//   margin: 0;
+//   font-family: Roboto, 'Helvetica Neue', sans-serif;
+// }

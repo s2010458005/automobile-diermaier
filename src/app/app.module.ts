@@ -16,6 +16,7 @@ import { DesktopMenuComponent } from './components/desktop-menu/desktop-menu.com
 import { ServiceComponent } from './components/service/service.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { CdkAccordionModule } from '@angular/cdk/accordion';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatExpansionModule,
+    CdkAccordionModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

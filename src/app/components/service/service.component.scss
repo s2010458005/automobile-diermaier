@@ -5,21 +5,59 @@
   justify-content: center;
   gap: 3rem;
   width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
 
   &__box {
     padding: 1rem;
-    height: 23rem;
-    width: 20rem;
+    width: 30rem;
     background-color: $grey-background;
   }
 }
 
 .box {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  padding: 1rem;
+  height: 100%;
+  outline: auto 1px $grey-50;
+  transition: $transition;
+
+  &:focus {
+    transform: translate(0, -1rem);
+    outline: auto 2px $grey-90;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   &__heading {
     font-weight: 700;
+    font-size: clamp(1rem, 5vw, 1.2rem);
+    padding: 1rem 0;
   }
 
   &__icon {
-    width: 5rem;
+    width: clamp(3rem, 10vw, 5rem);
+    margin: 1rem auto;
+
+    &:hover {
+      //   scale: 1.1;
+    }
+  }
+
+  &__body {
+    &:hover {
+      .box {
+        // outline: auto 1px;
+      }
+    }
   }
 }
