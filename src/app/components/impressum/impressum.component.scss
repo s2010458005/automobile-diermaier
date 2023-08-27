@@ -3,17 +3,22 @@
 .impressum {
   display: flex;
   flex-direction: column;
-  margin: 2rem;
+  margin: 4rem;
+  color: $grey-90;
 
-  &__heading {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
+  @media screen and (max-width: 600px) {
+    margin: 2rem;
   }
 
-  &__subhheading {
-    font-size: 1.5rem;
+  &__heading {
+    font-size: clamp(1rem, 5vw, 2rem);
     font-weight: 500;
-    margin: 0 1rem;
+    margin: 2rem 0 1rem;
+  }
+
+  &__subheading {
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    font-weight: 500;
+    margin: 1rem 0;
   }
 }
