@@ -28,12 +28,6 @@
   }
 }
 
-.spacer {
-  // min-width: 5rem;
-  // max-width: 30rem;
-  // width: clamp(5rem, 50%, 30rem);
-}
-
 .menu-list {
   margin-right: 2rem;
   display: flex;
@@ -61,15 +55,10 @@
       // font-size: 1.2rem;
       // font-weight: 500;
       // transform: translateY(-2px);
-
       // background-color: grayscale($color: #edebeb);
       // border-radius: 1.5rem;
 
       transform: scale(1.1);
-    }
-
-    &:focus {
-      scale: 1.2;
     }
   }
 }
