@@ -6,6 +6,7 @@ import { CarsComponent } from './components/cars/cars.component';
 import { HomeComponent } from './components/home/home.component';
 import { ImpressumComponent } from './components/impressum/impressum.component';
 import { ServiceComponent } from './components/service/service.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
