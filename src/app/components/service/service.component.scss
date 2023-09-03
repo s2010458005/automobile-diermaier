@@ -44,12 +44,12 @@
   width: 20rem;
   padding: 1rem;
   height: 100%;
-  outline: auto 1px $grey-70;
+  outline: 1px solid black;
   transition: $transition;
 
-  &:focus {
-    transform: translate(0, -1rem);
-  }
+  // &:focus {
+  //   transform: translate(0, -1rem);
+  // }
 
   &__header {
     display: flex;
@@ -69,10 +69,6 @@
   &__icon {
     width: clamp(3rem, 10vw, 5rem);
     margin: 1rem auto;
-
-    &:hover {
-      //   scale: 1.1;
-    }
   }
 
   &__body {
