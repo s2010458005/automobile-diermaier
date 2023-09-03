@@ -73,10 +73,9 @@
   &__heading {
     padding: 1rem;
     // font-family: $quote-font;
-    font-family: 'libre baskerville', serif;
-
+    // font-family: 'libre baskerville', serif;
     font-weight: 300;
-    font-size: clamp(1rem, 7vw, 3rem);
+    font-size: clamp(1.5rem, 4vw, 4rem);
     width: max-content;
     color: $grey-90;
     transition: all 0.2s ease-in-out;
@@ -87,9 +86,10 @@
   }
 
   &__text-special {
-    // font-family: 'libre baskerville', serif;
-    font-size: 1.1rem;
-    font-weight: 500;
+    // // font-family: 'libre baskerville', serif;
+    // font-size: 1.2rem;
+    font-weight: 550;
+    // font-family: $heading-font;
   }
 }
 

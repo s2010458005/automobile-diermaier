@@ -4,16 +4,16 @@
   display: flex;
 
   &__heading {
-    font-size: clamp(1.5rem, 6vw, 4rem);
-    font-weight: 300;
+    font-size: clamp(1.5rem, 4vw, 4rem);
     text-align: center;
     padding: 1rem;
+    font-weight: 300;
   }
 
   &__subheading {
     // font-family: $quote-font;
-    font-family: 'libre baskerville', serif;
-
+    // font-family: 'libre baskerville', serif;
+    font-weight: 300;
     padding: 0 1rem 5rem;
     text-align: center;
 
@@ -47,9 +47,9 @@
   outline: 1px solid black;
   transition: $transition;
 
-  // &:focus {
-  //   transform: translate(0, -1rem);
-  // }
+  &:focus {
+    transform: translate(0, -1rem);
+  }
 
   &__header {
     display: flex;
