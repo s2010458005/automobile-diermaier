@@ -10,7 +10,6 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { CarsComponent } from './components/cars/cars.component';
 import { ImpressumComponent } from './components/impressum/impressum.component';
-import { MapComponent } from './components/map/map.component';
 import { MobileMenuComponent } from './components/mobile-menu/mobile-menu.component';
 import { DesktopMenuComponent } from './components/desktop-menu/desktop-menu.component';
 import { ServiceComponent } from './components/service/service.component';
@@ -29,7 +28,6 @@ import { DataSecurityComponent } from './components/data-security/data-security.
     HomeComponent,
     CarsComponent,
     ImpressumComponent,
-    MapComponent,
     MobileMenuComponent,
     DesktopMenuComponent,
     ServiceComponent,
