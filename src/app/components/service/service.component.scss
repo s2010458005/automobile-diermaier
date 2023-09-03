@@ -1,7 +1,17 @@
 @import '../../../styles.scss';
 
+:host {
+  flex: 1;
+}
+
 .service {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    margin-top: 7rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-top: 3rem;
+  }
 
   &__heading {
     font-size: clamp(1.5rem, 4vw, 4rem);
@@ -14,7 +24,7 @@
     // font-family: $quote-font;
     // font-family: 'libre baskerville', serif;
     font-weight: 300;
-    padding: 0 1rem 5rem;
+    padding: 0.5rem 1rem 4rem;
     text-align: center;
 
     @media screen and (max-width: 600px) {
