@@ -54,4 +54,8 @@
 .container-image {
   // max-width: 40rem;
   max-width: clamp(8rem, 70vw, 40rem);
+
+  @media screen and (max-width: 800px) {
+    max-width: 100vw;
+  }
 }

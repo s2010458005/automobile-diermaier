@@ -17,6 +17,7 @@ import { ServiceComponent } from './components/service/service.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
+import { DataSecurityComponent } from './components/data-security/data-security.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { CdkAccordionModule } from '@angular/cdk/accordion';
     MobileMenuComponent,
     DesktopMenuComponent,
     ServiceComponent,
+    DataSecurityComponent,
   ],
   imports: [
     BrowserModule,

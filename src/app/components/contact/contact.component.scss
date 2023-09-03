@@ -14,7 +14,6 @@
 .header {
   &__image {
     width: 100%;
-    // opacity: 0.5;
 
     @media (max-width: 700px) {
       height: 15rem;
@@ -33,20 +32,6 @@
     height: 20rem;
   }
 
-  //title with image
-  // &__title {
-  //   font-family: $heading-font;
-  //   font-size: clamp(1.5rem, 8vw, 6rem);
-  //   font-weight: 700;
-  //   width: max-content;
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-  //   color: white;
-  // }
-
-  //title without image
   &__title {
     font-family: $quote-font;
     font-size: clamp(1.5rem, 9vw, 6rem);
@@ -70,7 +55,6 @@
 
 .item {
   gap: 1rem;
-  // transform: translateY(-15%);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -121,19 +105,14 @@
   }
 
   &__heading {
-    // font-family: $heading-font;
     font-size: clamp(1rem, 5vw, 3rem);
-    // font-weight: 700;
-    // font-family: $quote-font;
     width: max-content;
     color: $grey-90;
     padding: 2rem 2rem 0.5rem;
   }
 
   &__subheading {
-    // font-size: clamp(0.8rem, 2vw, 1.5rem);
     color: $grey-90;
-    // color: grayscale($color: #5d5d5d);
     font-family: $quote-font;
     padding: 0.5rem 1rem 4rem;
     text-align: center;
@@ -161,9 +140,6 @@
     height: 13rem;
     padding: 0 1rem;
     background-color: white;
-    // background-color: rgb(179, 179, 179);
-    // border-radius: 1rem;
-    // box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
 
     @media screen and (max-width: 600px) {
       width: 100%;
@@ -179,16 +155,11 @@
       height: 18rem;
       padding: 2rem;
     }
-
-    // &:hover {
-    //   scale: 1.1;
-    // }
   }
 
   &__heading {
     display: flex;
     font-size: clamp(1rem, 4vw, 1.5rem);
-    // color: white;
     color: $grey-90;
     font-weight: 500;
   }
@@ -199,7 +170,6 @@
   flex-direction: column;
 
   &__text {
-    // color: white;
     color: $grey-70;
   }
 

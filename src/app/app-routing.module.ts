@@ -6,7 +6,7 @@ import { CarsComponent } from './components/cars/cars.component';
 import { HomeComponent } from './components/home/home.component';
 import { ImpressumComponent } from './components/impressum/impressum.component';
 import { ServiceComponent } from './components/service/service.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { DataSecurityComponent } from './components/data-security/data-security.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'über-mich', component: AboutMeComponent },
   { path: 'kontakt', component: ContactComponent },
   { path: 'impressum', component: ImpressumComponent },
+  { path: 'datenschutz', component: DataSecurityComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }, // redirect to home
 ];
 

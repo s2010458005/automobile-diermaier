@@ -2,12 +2,15 @@
 
 :host {
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 100rem;
 
   &__background {
     display: flex;
@@ -69,10 +72,9 @@
 
   &__heading {
     padding: 1rem;
-    // font-family: $heading-font;
-    // font-weight: 700;
+    // font-family: $quote-font;
+    font-family: 'libre baskerville', serif;
 
-    font-family: $quote-font;
     font-weight: 300;
     font-size: clamp(1rem, 7vw, 3rem);
     width: max-content;
@@ -84,16 +86,8 @@
     }
   }
 
-  &__text {
-    // padding: 0 5rem 2rem;
-  }
-
   &__text-special {
-    font-family: $quote-font;
-
-    // &:hover {
-    //   transform: translate(0, -0.5rem);
-    // }
+    font-family: 'libre baskerville', serif;
   }
 }
 
