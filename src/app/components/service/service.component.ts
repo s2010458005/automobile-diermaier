@@ -12,8 +12,13 @@ export class ServiceComponent {
     new ServiceItem(
       'assets/icons/fahrzeugsuche2.png',
       'Verkauf',
-      'Ich biete Gebrauchtwagen zur besten Qualität an.',
-      ['Geprüfte Gebrauchtwagen', 'Beste Angebote', 'Handschlagqualität'],
+      'Ich biete garantiegeprüfte Gebrauchtwagen in bester Qualität an.',
+      [
+        'Geprüfte Gebrauchtwagen',
+        'Bis zu 3 Jahren Garantie',
+        'Beste Angebote',
+        'Handschlagqualität',
+      ],
     ),
     new ServiceItem(
       'assets/icons/car.png',

@@ -17,6 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { DataSecurityComponent } from './components/data-security/data-security.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import { DataSecurityComponent } from './components/data-security/data-security.
     BrowserAnimationsModule,
     MatExpansionModule,
     CdkAccordionModule,
+    AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [],
   bootstrap: [AppComponent],
